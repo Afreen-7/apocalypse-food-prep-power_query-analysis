@@ -1,204 +1,393 @@
-# apocalypse-food-prep-power_query-analysis
-Retail food price analysis using Excel, Power Query, PivotTables, and Power BI to clean, transform, and compare product prices across Costco, Target, and Walmart.
-Apocalypse Food Prep – Power Query & Power BI Analysis
+# Apocalypse Food Prep – Power Query & Power BI Analysis
 
-Project Overview
+## Project Overview
 
-This project analyzes the Apocalypse Food Prep dataset using Microsoft Excel, Power Query, PivotTables, and Power BI.
+This project analyzes the **Apocalypse Food Prep** dataset using **Microsoft Excel, Power Query, PivotTables, and Power BI**.
 
-The dataset contains food product prices collected from three major retailers — Costco, Target, and Walmart — across January to April 2022.
+The project demonstrates an end-to-end data analysis workflow, starting from raw retail and sales data and transforming it into structured information for analysis and visualization.
 
-The main goal of the project was to transform raw purchase-price data into a structured dataset and create a clear overview of how product prices vary across stores and months.
+The project covers:
 
-Objectives
+* Data cleaning and transformation using Power Query
+* Retail product price analysis
+* Store and product comparisons
+* Excel PivotTable analysis
+* Power BI data modeling
+* Product sales and revenue analysis
+* Conditional formatting in Power BI
+* Interactive data visualization
 
-Clean and transform raw food-price data using Power Query.
+The analysis includes both **retail price observations** and **product sales data**, providing insights into product pricing and sales performance.
 
-Organize product, store, price, and date information into a usable structure.
+---
 
-Analyze price changes across January, February, March, and April 2022.
+## Dataset
 
-Compare product prices between Costco, Target, and Walmart.
+The project uses the **Apocalypse Food Prep** dataset.
 
-Create PivotTables to summarize prices by store, product, and month.
+The dataset includes information about products, prices, sales transactions, customers, and retailers.
 
-Build a Power BI data model for further analysis and visualization.
+### Retail Price Data
 
-Generate insights that can support retail price comparison and purchasing decisions.
+The retail price dataset contains price information collected from three major retailers:
 
-Dataset
+* Costco
+* Target
+* Walmart
 
-The project uses the Apocalypse Food Prep dataset, containing price information for the following products:
+The price data covers the period from **January 2022 to April 2022**.
 
-Bottled Water
+Products include:
 
-Canned Vegetables
+* Bottled Water
+* Canned Vegetables
+* Dried Beans
+* Duct Tape
+* Flashlight
+* Milk
+* Rice
+* Rope
+* Water Filter
 
-Dried Beans
+### Sales Data
 
-Duct Tape
+The sales dataset contains information about products and customer transactions.
 
-Flashlight
+The Excel workbook includes the following sheets:
 
-Milk
+### 1. Apocalypse Store
 
-Rice
+Contains product-level information:
 
-Rope
+* Product ID
+* Product Name
+* Price
+* Production Cost
 
-Water Filter
+### 2. Apocalypse Sales
 
-Stores
+Contains sales transaction information:
 
-Costco
+* Customer ID
+* Customer
+* Product ID
+* Order ID
+* Units Sold
+* Date Purchased
 
-Target
+### 3. Customer Information
 
-Walmart
+Contains customer details:
 
-Time Period
+* Customer ID
+* Customer
+* Address
+* City
+* State
+* Zipcode
 
-January 2022 – April 2022
+---
 
-Tools & Technologies
+## Retailers
 
-Microsoft Excel
+The retail price analysis covers:
 
-Data organization
+* Costco
+* Target
+* Walmart
 
-PivotTables
+---
 
-Price summaries
+## Time Period
 
-Purchase overview
+The retail price analysis covers:
 
-Power Query
+**January 2022 – April 2022**
 
-Data transformation
+---
 
-Data cleaning
+## Tools & Technologies
 
-Reshaping and structuring data
+* **Microsoft Excel**
 
-Preparing data for analysis
+  * Data organization
+  * PivotTables
+  * Price summaries
+  * Purchase overview
 
-Power BI
+* **Power Query**
 
-Data modeling
+  * Data cleaning
+  * Data transformation
+  * Reshaping data
+  * Structuring data for analysis
 
-Data exploration
+* **Power BI**
 
-Interactive analysis and visualization
+  * Data modeling
+  * Data visualization
+  * Conditional formatting
+  * Product analysis
+  * Sales analysis
+  * Revenue analysis
 
-Data Preparation with Power Query
+---
 
-The raw data was transformed into a structured format with fields such as:
+# Part 1 – Power Query & Excel Analysis
 
-Column
+## Data Preparation with Power Query
 
-Description
+Power Query was used to transform the raw retail price data into a structured format suitable for analysis.
 
-Store
+The transformed dataset contains fields such as:
 
-Retailer name
+| Column  | Description                    |
+| ------- | ------------------------------ |
+| Store   | Retailer name                  |
+| Product | Food/preparation product       |
+| Price   | Product price                  |
+| Date    | Date associated with the price |
 
-Product
+Power Query helped organize, clean, and restructure the source data before it was analyzed using Excel and Power BI.
 
-Food/preparation product
+---
 
-Price
-
-Product price
-
-Date
-
-Date associated with the price
-
-Power Query was used to organize the source data into a format suitable for PivotTables and Power BI analysis.
-
-Excel Analysis
+## Excel Analysis
 
 A PivotTable was created to summarize product prices by:
 
-Store
+* Store
+* Product
+* Month
+* Grand Total
 
-Product
+The project also includes a **Purchase Overview** showing monthly and overall price totals for each retailer.
 
-Month
+---
 
-Grand Total
+## Overall Store Totals
 
-The project also includes a Purchase Overview showing monthly and overall price totals for each retailer.
+Based on the retail price analysis:
 
-Overall Store Totals
+| Store           |   Total Price |
+| --------------- | ------------: |
+| Costco          |       $343.67 |
+| Target          |       $374.17 |
+| Walmart         |       $372.55 |
+| **Grand Total** | **$1,090.39** |
 
-Based on the analysis:
+These totals represent the **sum of recorded product-price observations** across the analyzed period. They should not be interpreted as total sales revenue.
 
-Store
+---
 
-Total Price
+## Power BI Data Model
 
-Costco
+The transformed data was brought into Power BI for further analysis and visualization.
 
-$343.67
+The Power BI data structure includes fields such as:
 
-Target
+* Location / Store
+* Product
+* Date
+* Product Cost
+* Sales information
+* Customer information
 
-$374.17
+This provides a foundation for comparing products, retailers, prices, sales, and revenue.
 
-Walmart
+---
 
-$372.55
+# Part 2 – Power BI Conditional Formatting
 
-Grand Total
+## Conditional Formatting Overview
 
-$1,090.39
+The second stage of the project focuses on using **Conditional Formatting in Microsoft Power BI**.
 
-These totals represent the sum of the recorded product prices across the analyzed period and should be interpreted as price observations rather than total sales revenue.
+The main purpose was to understand how conditional formatting can make Power BI tables and visualizations easier to read and interpret.
 
-Power BI
+The dashboard focuses on comparing:
 
-The transformed data was brought into Power BI for data modeling and further analysis.
+* Product prices
+* Units sold
+* Revenue
 
-The Power BI data structure contains:
+across different Apocalypse Food Prep products.
 
-Location / Store
+---
 
-Product
+## Conditional Formatting Techniques
 
-Date
+### Data Bars
 
-Product Cost
+Data bars were used to visually represent the magnitude of **Units Sold**.
 
-This provides a foundation for creating interactive reports and comparing prices across retailers, products, and time periods.
+This makes it easier to compare products without relying only on numerical values.
 
-Key Analysis Areas
+### Color Scales
+
+Color scale formatting was applied to product **Price** values.
+
+The color intensity provides a quick visual indication of relatively lower and higher prices.
+
+### Icons
+
+Icon-based conditional formatting was used to provide additional visual indicators for values.
+
+Icons make patterns and differences easier to identify at a glance.
+
+---
+
+## Dashboard
+
+The Power BI dashboard provides product-level analysis using:
+
+* Product Name
+* Product Price
+* Units Sold
+* Revenue
+
+The visuals allow products to be compared based on their sales and financial performance.
+
+### Product Sales Table
+
+The table displays product information along with **Units Sold**.
+
+Conditional formatting is applied to make numerical values more visually informative and easier to compare.
+
+### Revenue Analysis
+
+The dashboard also compares products based on:
+
+* Units Sold
+* Revenue
+
+This helps identify products with higher sales volumes and revenue.
+
+---
+
+## Products Included in the Analysis
+
+The dashboard includes products such as:
+
+* Multitool Survival Knife
+* Nylon Rope
+* Duct Tape
+* Stainless Steel Axe
+* N95 Mask
+* Weatherproof Jacket
+* Water Purifier
+* Backpack
+* Waterproof Matches
+* Solar Battery Flashlight
+
+---
+
+# Key Analysis Areas
 
 The project focuses on questions such as:
 
-Which retailer has the lowest overall recorded price total?
+* Which retailer has the lowest overall recorded price total?
+* How do product prices differ between Costco, Target, and Walmart?
+* Which products have the highest recorded prices?
+* How do prices change from January through April?
+* Which products show the largest price differences between retailers?
+* Which products have the highest units sold?
+* Which products generate the highest revenue?
+* How can conditional formatting make product comparisons easier?
+* How can transformed data be presented clearly for business decision-making?
 
-How do product prices differ between Costco, Target, and Walmart?
+---
 
-Which products have the highest recorded prices?
+# Project Objectives
 
-How do prices change from January through April?
+The main objectives of this project were to:
 
-Which products show the largest price differences between retailers?
+1. Clean and transform raw data using Power Query.
+2. Organize product, store, price, and date information.
+3. Analyze retail prices across multiple stores and months.
+4. Compare Costco, Target, and Walmart prices.
+5. Create Excel PivotTables for price analysis.
+6. Import transformed data into Power BI.
+7. Create product-level sales and revenue analysis.
+8. Practice conditional formatting in Power BI.
+9. Improve data readability through visual formatting.
+10. Present data in a clear and business-friendly format.
 
-How can transformed data be presented clearly for business decision-making?
+---
 
+# What I Learned
 
+Through this project, I practiced:
 
+* Data cleaning and transformation using Power Query
+* Organizing raw datasets for analysis
+* Creating Excel PivotTables
+* Analyzing product prices
+* Comparing retailer performance
+* Building Power BI reports
+* Creating tables and visualizations
+* Applying data bars
+* Applying color scales
+* Using icon-based conditional formatting
+* Comparing product sales performance
+* Analyzing revenue
+* Improving the readability of data visualizations
+* Presenting numerical data in a more intuitive way
 
-Key Takeaway
+---
 
-This project demonstrates an end-to-end data analysis workflow, starting with raw retail price data and transforming it into structured information using Power Query, Excel PivotTables, and Power BI.
+# Dashboard Preview
 
-It showcases practical skills in preparing data, comparing retailers and products, and presenting data in a format that can support business analysis and decision-making.
+The Power BI dashboard provides a visual comparison of product prices, units sold, and revenue using different conditional formatting techniques.
 
-Author
+![Power BI Dashboard](dashboard.png)
 
-Afreen Tariq
+---
+
+# Dataset Structure
+
+```text
+Apocalypse Food Prep
+│
+├── Apocalypse Store
+│   ├── Product ID
+│   ├── Product Name
+│   ├── Price
+│   └── Production Cost
+│
+├── Apocalypse Sales
+│   ├── Customer ID
+│   ├── Customer
+│   ├── Product ID
+│   ├── Order ID
+│   ├── Units Sold
+│   └── Date Purchased
+│
+└── Customer Information
+    ├── Customer ID
+    ├── Customer
+    ├── Address
+    ├── City
+    ├── State
+    └── Zipcode
+```
+
+---
+
+# Key Takeaway
+
+This project demonstrates an end-to-end data analysis workflow using **Excel, Power Query, and Power BI**.
+
+It shows how raw data can be cleaned and transformed, analyzed using PivotTables, and then presented through Power BI visualizations.
+
+The project also demonstrates how **conditional formatting** can improve the readability of numerical data and make comparisons between products easier and faster.
+
+Overall, the project showcases practical skills in **data preparation, data analysis, Power BI visualization, and business-oriented reporting**.
+
+---
+
+## Author
+
+**Afreen Tariq**
 
 BS Data Science | Data Analyst
